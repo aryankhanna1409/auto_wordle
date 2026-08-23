@@ -6,12 +6,12 @@ Steps to use:
 1. Open your terminal and use pip to install playwright.
 2. Use playwright to install chromium.
 3. The commands to do the same are as follows:
-# pip install playwright
-# playwright install chromium
+ **pip install playwright**
+**playwright install chromium**
 5. Create a folder on your desktop and place the .py file in it.
 6. Right click the folder and open it in terminal.
 7. Simply use the command:
-# python wordle_bot.py
+**python wordle_bot.py**
 
 The bot will automatically download the list of all possible 5-letter words from github and open the site.
 It will then wait for you to dismiss all pop-ups and click Enter on the terminal.
