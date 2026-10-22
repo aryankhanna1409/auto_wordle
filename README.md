@@ -1,20 +1,60 @@
-This bot automatically solves the daily wordle for you.
-We use Python along with Playwright, a powerful web automation library. Playwright is perfect for this because it easily bypasses the pop-ups on the New York Times website and simulates real keyboard strokes.
-This is a complete Python script that automatically fetches a standard Wordle word list, opens the browser, interacts with the game, reads the tile colors, and filters out the wrong words until it solves the puzzle.
+<div align="center">
 
-Steps to use:
-1. Open your terminal and use pip to install playwright.
-2. Use playwright to install chromium.
-3. The commands to do the same are as follows:
- **pip install playwright**
-**playwright install chromium**
-5. Create a folder on your desktop and place the .py file in it.
-6. Right click the folder and open it in terminal.
-7. Simply use the command:
-**python wordle_bot.py**
+# 🟩 auto_wordle
 
-The bot will automatically download the list of all possible 5-letter words from github and open the site.
-It will then wait for you to dismiss all pop-ups and click Enter on the terminal.
-Then it will automatically start guessing words starting with the statistically most-effective word "Crane" and noting every letters status in brackets as Correct, Given or Empty for Green, Yellow and Grey respectively.
-This process repeats until it correctly guesses the word.
-Once done, it keeps the site open for 10 seconds for you to share your result before it automatically closes it.
+**A bot that opens today's Wordle, reads the tile colours and solves it for you.**
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![Playwright](https://img.shields.io/badge/Playwright-browser%20automation-2EAD33?style=flat-square&logo=playwright&logoColor=white)
+
+</div>
+
+---
+
+## ✨ How it works
+
+1. Downloads a list of valid five-letter words.
+2. Opens the New York Times Wordle in a real Chromium window with [Playwright](https://playwright.dev/python/).
+3. Opens with **CRANE**, then types each guess with real keystrokes.
+4. Reads every tile's state (`correct`, `present` or `absent`) straight from the page.
+5. Filters the word list against that feedback, handling repeated letters, and guesses again from what's left.
+6. If the game rejects a word as "not in word list", it clears the row and tries another.
+7. Stops when all five tiles are green, then keeps the browser open for 10 seconds so you can screenshot the result.
+
+| Tile | State read by the bot | Colour |
+|---|---|---|
+| ✅ | `correct` | Green |
+| 🟨 | `present` | Yellow |
+| ⬜ | `absent` | Grey |
+
+---
+
+## 🚀 Quick start
+
+```bash
+git clone https://github.com/aryankhanna1409/auto_wordle.git
+cd auto_wordle
+
+pip install playwright
+playwright install chromium
+
+python wordle_bot.py
+```
+
+The browser opens on the Wordle page. **Close the "How to Play" and "Log in" pop-ups yourself**, click the empty board once so it has keyboard focus, then press **Enter** in the terminal to start the bot.
+
+---
+
+## 📁 Files
+
+| File | Purpose |
+|---|---|
+| `wordle_bot.py` | The whole bot: word list download, feedback filter and browser loop |
+
+---
+
+<div align="center">
+
+A small automation experiment · built for fun
+
+</div>
