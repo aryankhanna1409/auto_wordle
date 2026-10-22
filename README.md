@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🟩 auto_wordle
+<img src="assets/banner.svg" width="100%" alt="auto_wordle: A bot that reads the tiles and solves today's Wordle" />
 
 **A bot that opens today's Wordle, reads the tile colours and solves it for you.**
 
