@@ -4,14 +4,14 @@
 
 **A bot that opens today's Wordle, reads the tile colours and solves it for you.**
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![Playwright](https://img.shields.io/badge/Playwright-browser%20automation-2EAD33?style=flat-square&logo=playwright&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3b2416?style=flat-square&logo=python&logoColor=efdfc4)
+![Playwright](https://img.shields.io/badge/Playwright-browser%20automation-8a5a22?style=flat-square&logo=playwright&labelColor=1d120b&logoColor=efdfc4)
 
 </div>
 
 ---
 
-## ✨ How it works
+## How it works
 
 1. Downloads a list of valid five-letter words.
 2. Opens the New York Times Wordle in a real Chromium window with [Playwright](https://playwright.dev/python/).
@@ -29,7 +29,7 @@
 
 ---
 
-## 🚀 Quick start
+## Quick start
 
 ```bash
 git clone https://github.com/aryankhanna1409/auto_wordle.git
@@ -45,7 +45,7 @@ The browser opens on the Wordle page. **Close the "How to Play" and "Log in" pop
 
 ---
 
-## 📁 Files
+## Files
 
 | File | Purpose |
 |---|---|
@@ -55,6 +55,10 @@ The browser opens on the Wordle page. **Close the "How to Play" and "Log in" pop
 
 <div align="center">
 
+<img src="assets/footer.svg" width="100%" alt="Off the menu: from the archive" />
+
 A small automation experiment · built for fun
+
+<sub>Part of <a href="https://github.com/aryankhanna1409">Aryan Khanna's portfolio</a>: one loop, five pours, from robots to AI systems.</sub>
 
 </div>
