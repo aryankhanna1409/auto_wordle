@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/banner.svg" width="100%" alt="auto_wordle: A bot that reads the tiles and solves today's Wordle" />
+<picture><source media="(prefers-color-scheme: light)" srcset="assets/banner-light.svg" /><img src="assets/banner.svg" width="100%" alt="auto_wordle: A bot that reads the tiles and solves today's Wordle" /></picture>
 
 **A bot that opens today's Wordle, reads the tile colours and solves it for you.**
 
@@ -55,7 +55,7 @@ The browser opens on the Wordle page. **Close the "How to Play" and "Log in" pop
 
 <div align="center">
 
-<img src="assets/footer.svg" width="100%" alt="Off the menu: from the archive" />
+<picture><source media="(prefers-color-scheme: light)" srcset="assets/footer-light.svg" /><img src="assets/footer.svg" width="100%" alt="Off the menu: from the archive" /></picture>
 
 A small automation experiment · built for fun
 
